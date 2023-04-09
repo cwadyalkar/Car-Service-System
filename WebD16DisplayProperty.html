@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Property</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            /* border: 2px solid red; */
+        }
+        .img{
+            width: 200px;
+            height: 200px;
+        }
+        p{
+            color: rgb(0, 255, 68);
+            display: inline;
+        }
+        li{
+            display: inline;
+            padding: 20px;
+        }
+        ul{
+            padding: 30px;
+            text-align: center;
+            background-color: black;
+            color: white;
+        }
+        li:hover {
+            color: violet;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Menu</li>
+            <li>Profile</li>
+            <li>About</li>
+        </ul>
+    </nav>
+    <!-- some of the examples of block elements are :-
+    1) <p></p>
+    2) <h1></h1>
+    3) <form></form>
+    4) <div></div>
+    5) list tags(li ,ul,ol) -->
+
+
+    <h1><span style="color: brown;">Let's</span> <span style="color: blue;">Get</span> <span style="color: aqua;">Started</span></h1>
+    <p>Lorem ipsum dolor sit amet.</p>
+
+    <p>Lorem, ipsum dolor.</p>
+
+    <span>Lorem ipsum dolor sit amet consectetur.</span>
+    <!-- span is an inline Elements -->
+    <!-- some inline elements are:- 
+    1) <span></span>
+    2) <a href=""></a>
+    3) image  :- it is also an inline block elements-->
+    <span>Lorem ipsum dolor sit.</span>
+    <img class="img"src="https://images.unsplash.com/photo-1675274943919-e83371a53022?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=782&q=80" alt="">
+    <a href="">click me</a>
+    <a href="">click me</a>
+
+    
+    
+</body>
+</html> 

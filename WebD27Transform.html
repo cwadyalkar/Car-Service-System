@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform</title>
+    <style>
+        .container{
+            height: 400px;
+            width: 400px;
+            background-color: blue;
+            margin: 80px auto;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size :3rem;
+            /* transform: scaleX(2); */
+            /* transform: skew(0deg , 40deg); */
+            /* transform: translate(50%,50%); */
+            transform: rotateX(180deg);
+             
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            BOX
+        </div>
+    </div>
+</body>
+</html>

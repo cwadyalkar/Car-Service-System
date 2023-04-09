@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo</title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding: 40px;
+
+        }
+      
+        .primarybtn:hover{
+            color: red;
+        }
+         .primarybtn:link{
+            color: green;
+            padding: 10px;
+        }
+        .primarybtn:visited{
+            color: orange;
+        } 
+        .primarybtn:active{
+            color: black;
+            background-color: red;
+            border: 4px solid purple;
+        }
+        ul li:first-child{
+            background-color: red;
+        }
+        ul li:last-child{
+            background-color: pink;
+        }
+        ul li:nth-child(4){
+            background-color: green;
+        }
+        h1::first-letter{
+           color: red;
+           font-size: 4rem
+        }
+        ::selection{
+            background-color:aquamarine;
+            
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>This is Pseudo Classes</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum tempore totam iusto laboriosam perferendis expedita asperiores aut laborum quidem dicta, fugit voluptatum itaque nisi ipsam ea accusamus voluptas, vitae dolore quae nulla autem quibusdam! Consectetur recusandae at dolore quod veniam consequatur tempore corporis delectus voluptas saepe quisquam quibusdam, est tenetur?</p>
+        <a class="primarybtn"href="">Click me</a>
+
+        <ul>
+            <li>item-1</li>
+            <li>item-2</li>
+            <li>item-3</li>
+            <li>item-4</li>
+            <li>item-5</li>
+        </ul>
+
+        <ul>
+            <li>item-6</li>
+            <li>item-7</li>
+            <li>item-8</li>
+            <li>item-9</li>
+            <li>item-10</li>
+        </ul>
+    </main>
+</body>
+</html>

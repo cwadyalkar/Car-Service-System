@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables in HTML</title>
+    <style>
+          :root{
+            --primarytextcolor :#222;
+            --secondarytextcolor :#444;
+            --cardbackgroundcolor : #fff;
+            --backgroundcolor : #eee;
+            --defaultmargin : 20px;
+        }
+        .dark{
+            --primarytextcolor :#fff;
+            --secondarytextcolor :#ddd;
+            --cardbackgroundcolor : #333;
+            --backgroundcolor : #111;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            padding: 40px;
+            /* --myvar :red; */
+            background-color: var(--backgroundcolor);
+            min-height: 100vh;
+            
+        }
+        p{
+            color: var(--secondarytextcolor);
+        }
+        .box{
+            /* --myvar :red; */
+            padding: var(--defaultmargin);
+            background-color: var(--cardbackgroundcolor);
+            margin-block:  var(--defaultmargin);
+            border-radius:  var(--defaultmargin);
+
+        }
+        h1{
+            color: var(--primarytextcolor);
+            /* background-color: var(--myvar,green); */
+            text-align: center;
+        }
+       
+        .box h2{
+            color: var(--primarytextcolor);
+            background-color: var(--myvar);
+            margin-bottom:  var(--defaultmargin);
+        }
+        /* @media screen and (min-width :800px) {
+            .container{
+                --myvar : pink;
+            }
+        }
+       */
+    </style>
+</head>
+<body class="dark">
+    <div class="container">
+        <h1>Natures Park</h1>
+        <div class="box dark">
+            <h2>Waterfall</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla corrupti itaque laborum vitae beatae minus nesciunt veritatis officiis facilis architecto.</p>
+        </div>
+        <div class="box">
+            <h2>Snowfall</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla corrupti itaque laborum vitae beatae minus nesciunt veritatis officiis facilis architecto.</p>
+        </div>
+        <div class="box">
+            <h2>Mountain</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla corrupti itaque laborum vitae beatae minus nesciunt veritatis officiis facilis architecto.</p>
+        </div>
+    </div>
+</body>
+</html>

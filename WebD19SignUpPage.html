@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignUp Mini Project</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Lato:wght@400;700&family=Rubik+Puddles&family=Silkscreen&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Lato", sans-serif;
+      }
+      .outer-box {
+        height: 100vh;
+        width: 100vw;
+        background: linear-gradient(to top left, red, blue);
+      }
+      .inner-box {
+        width: 400px;
+        margin: 0 auto;
+        position: relative;
+        top: 40%;
+        transform: translateY(-50%);
+        border: 2px solid black;
+        padding: 20px 40px;
+        background-color: aliceblue;
+        border-radius: 8px;
+        box-shadow: 2px 2px 5px #a72704;
+      }
+      .signup-header h1 {
+        font-size: 2.5rem;
+        color: #212121;
+      }
+      .signup-header p {
+        font-size: 0.8rem;
+        color: #555;
+      }
+      .signup-body {
+        margin: 20px 0;
+      }
+      .signup-body p {
+        margin: 10px 0;
+      }
+      .signup-body p label {
+        display: block;
+        font-weight: bold;
+      }
+      .signup-body p input {
+        width: 100%;
+        padding: 10px;
+        border: 2px solid #cccc;
+        border-radius: 4px;
+        margin-top: 4px;
+        font-size: 1rem;
+        
+      }
+      .signup-body p input[type="submit"] {
+        background-color: #3498db;
+        border: none;
+        color: white;
+        cursor: pointer;
+      }
+      .signup-body p input[type="submit"]:hover {
+        background-color: #043e65;
+      }
+      .signup-footer p {
+        color: rgb(12, 12, 12);
+        text-align: center;
+      }
+      .signup-footer p a{
+        color: rgb(19, 68, 82);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer-box">
+      <div class="inner-box">
+        <header class="signup-header">
+          <h1>Sign Up</h1>
+          <p>It just take 30 Seconds</p>
+        </header>
+        <main class="signup-body">
+          <form action="#">
+            <p>
+              <label for="fullname">Full Name</label>
+              <input type="text" id="fullname" placeholder="Your name" />
+            </p>
+            <p>
+              <label for="email">Email</label>
+              <input type="text" id="email" placeholder="name@gmail.com" />
+            </p>
+            <p>
+              <label for="password">Your New Password</label>
+              <input
+                type="password"
+                id="password"
+                placeholder="At least 8 character"
+              />
+            </p>
+            <p>
+              <input type="submit" name="submit" value="Create Account" />
+            </p>
+          </form>
+        </main>
+        <footer class="signup-footer">
+          <p>Already have an Account? <a href="#">Login</a></p>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
+ 

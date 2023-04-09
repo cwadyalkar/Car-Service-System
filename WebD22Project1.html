@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,900&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Bodoni Moda", serif;
+        font-size: 1.2rem;
+      }
+      .container {
+        min-height: 100vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 20px;
+        background: linear-gradient(to right, #041308, #0b3317);
+      }
+      .left-text {
+        flex-basis: 30%;
+        /* border: 2px solid white; */
+      }
+      .gallery {
+        flex-basis: 50%;
+        display: grid;
+        gap: 8px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 120px;
+      }
+      .heading {
+        color: white;
+        text-align: center;
+        font-size: 3rem;
+      }
+      .subheading {
+        color: #ddd;
+        margin-top: 10px;
+        text-align: center;
+      }
+      .box {
+        background-size: cover;
+        background-position: center;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #222;
+        background-blend-mode: hard-light;
+        transition: all 1s ease-in-out;
+      }
+      .row-2 {
+        grid-row: span 2;
+      }
+      .col-2 {
+        grid-column: span 2;
+      }
+      .box:hover {
+        background-color: #999;
+        background-position: top;
+        box-shadow: 0 0 4px #fff;
+        cursor: pointer;
+      }
+      @media screen and (max-width : 1024px) {
+       .container{
+        flex-direction :column;
+        padding-block: 20px;
+      }
+      .gallery{
+        width: 100%;
+        padding-inline: 12px;
+        grid-auto-rows: 220px;
+      }
+      .box{
+        grid-row: span 1;
+        grid-column:span 3;
+
+      }
+       }
+
+      
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-text">
+        <h2 class="heading">My Portfolio</h2>
+        <p class="subheading">
+          When words become unclear,I shall focus with photograph.When Images
+          become inadequate,I shall be content with silence
+        </p>
+      </div>
+      <div class="gallery">
+        <div
+          class="box row-2"
+          style="
+            background-image: url(https://images.unsplash.com/photo-1674592309639-39067f6a8111?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDJ8NnNNVmpUTFNrZVF8fGVufDB8fHx8&auto=format&fit=crop&w=2000&q=60);
+          "
+        >
+          Beach
+        </div>
+        <div
+          class="box col-2"
+          style="
+            background-image: url(https://images.unsplash.com/photo-1675208986290-a72414630bbe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDEzfDZzTVZqVExTa2VRfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=60);
+          "
+        >
+          Waterfall
+        </div>
+        <div
+          class="box"
+          style="
+            background-image: url(https://images.unsplash.com/photo-1591244305830-ac2f5484d1a3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDIyfDZzTVZqVExTa2VRfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=60);
+          "
+        >
+          Jungle
+        </div>
+        <div
+          class="box row-2"
+          style="
+            background-image: url(https://images.unsplash.com/photo-1674922164798-9f1ea898f58e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDI0fDZzTVZqVExTa2VRfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=60);
+          "
+        >
+          Himalaya
+        </div>
+        <div
+          class="box col-2"
+          style="
+            background-image: url(https://images.unsplash.com/photo-1674653834059-1da760d2a3d8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDQ5fDZzTVZqVExTa2VRfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=60);
+          "
+        >
+          Mountain
+        </div>
+        <div
+          class="box"
+          style="
+            background-image: url(https://images.unsplash.com/photo-1674500021669-27da4b40772a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDY3fDZzTVZqVExTa2VRfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=60);
+          "
+        >
+          SnowFall
+        </div>
+        <div
+          class="box col-2"
+          style="
+            background-image: url(https://images.unsplash.com/photo-1674313985912-a1cba2eb921d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDcxfDZzTVZqVExTa2VRfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=60);
+          "
+        >
+          Treeking
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
